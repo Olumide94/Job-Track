@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+<head> <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
 <meta charset="UTF-8"/>
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -4439,6 +4441,10 @@ checkApiKey();
       Uses <code style="color:var(--cyan)">@gongrzhe/server-gmail-autoauth-mcp</code> · Must be open in Claude Desktop
     </div>
   </div>
-</div>
+</div><script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/Job-Track/service-worker.js');
+}
+</script>
 </body>
 </html>
